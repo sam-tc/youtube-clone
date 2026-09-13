@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="youtube.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Youtube.com Clone</title>
 </head>
 <body>
@@ -11,33 +16,49 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="video-preview">
-        <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp">
-
-        <p class="video-title">
-            Talking Tech and AI with Google CEO 
-            Sundar Pichai!
-        </p>
-        <p class="video-author">
-            Marques Brownlee
-        </p>
-        <p class="video-stats">
-            3.4M views &middot; 6 months ago
-        </p>
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://supersimple.dev/exercises/youtube/thumbnails/thumbnail-1.webp">
+        </div>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="https://yt3.ggpht.com/qu4TmIaYUlS41-dJ9gZ7DUR3nilvmB5_11i6OKSdvNnBNiyOusZP1bMN6ICnuxtjFBb6ioKgRQ=s88-c-k-c0x00ffffff-no-rj">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Talking Tech and AI with Google CEO 
+                    Sundar Pichai!
+                </p>
+                <p class="video-author">
+                    Marques Brownlee
+                </p>
+                <p class="video-stats">
+                    3.4M views &middot; 6 months ago
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="video-preview">
-        <img class="thumbnail" src="https://img.youtube.com/vi/wtDDjBOfTZo/maxresdefault.jpg">
-
-        <p class="video-title">
-            Give Me 26 minutes, I'll Give You 
-            10,000 hours of Claude Knowledge
-        </p>
-        <p class="video-author">
-            Iman Gadzhi
-        </p>
-        <p class="video-stats">
-            1.1M views &middot; 1 month ago
-        </p>
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="https://img.youtube.com/vi/wtDDjBOfTZo/maxresdefault.jpg">
+        </div>
+        <div>
+            <div class="channel-picture">
+                <img class="profile-picture" src="https://yt3.googleusercontent.com/FrBCHiFRihYVpyIETRD73uxdZn4hFJjSpogTuNBeApS1tFkHpHy3LLQzE0D3kTBUfXN6hODXVw=s160-c-k-c0x00ffffff-no-rj">
+            </div>
+            <div class="video-info">
+                <p class="video-title">
+                    Give Me 26 minutes, I'll Give You 
+                    10,000 hours of Claude Knowledge
+                </p>
+                <p class="video-author">
+                    Iman Gadzhi
+                </p>
+                <p class="video-stats">
+                    1.1M views &middot; 1 month ago
+                </p>
+            </div>
+        </div>
     </div>
 
 </body>
