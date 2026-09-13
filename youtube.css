@@ -1,0 +1,21 @@
+.thumbnail{
+    width: 300px;
+    display: block;
+
+    /* height: 165px;
+    object-fit: contain;
+    object-position: top;
+    border: 2px solid red; */
+}
+
+.search-bar{
+    width: 100px;
+}
+
+.video-title{
+    width: 300px;
+}
+
+.div-example{
+    display: inline-block;
+}
