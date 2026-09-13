@@ -31,8 +31,6 @@ p {
     vertical-align: top;
     margin-right: 15px;
 }
-<<<<<<< HEAD
-=======
 
 .channel-picture {
     display: inline-block;
@@ -63,4 +61,3 @@ p {
 .video-author {
     margin-bottom: 4px;
 }
->>>>>>> e120182 (Implement nested layout technique and import Roboto Font)
