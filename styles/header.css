@@ -4,25 +4,124 @@
 
 .header {
     height: 55px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    flex-direction: row;
+    overflow: hidden;
 }
 
 .left-section {
-    background-color: lightblue;
-    width: 150px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    margin-left: 24px;
+    margin-right: 20px;
 }
 
 .middle-section {
-    background-color: lightpink;
     flex: 1;
-    margin-left: 70px;
+    min-width: 0;
+    margin-left: 40px;
     margin-right: 35px;
     max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    min-width: none;
+    height: 40px;
+    padding-left: 16px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.search-btn {
+    flex-shrink: 0;
+    height: 40px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 20px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    /* margin-left: -1px; */
+    margin-right: 10px;
+}
+
+.search-icon {
+    height: 25px;
+    margin-top: 4px;
+}
+
+.voice-search-btn {
+    flex-shrink: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voice-search-icon {
+    height: 24px;
+    margin-top: 4px;
 }
 
 .right-section {
+    flex-shrink: 0;
+    gap: 16px;
+    margin-right: 24px;
     background-color: lightblue;
-    width: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 6px 15px;
+    border: 0;
+    border-radius: 20px;
+    flex-direction: row;
+    background-color: rgb(240, 240, 240);
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.plus-icon {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.notif-icon {
+    height: 24px;
+}
+
+.current-user-pic {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
 }
