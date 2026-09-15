@@ -25,9 +25,12 @@
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-btn">
                 <img class="search-icon" src="icons/search-icon.svg">
+                <div class="tooltip">Search</div>
             </button>
+            <!-- Put position absolute inside position relative -->
             <button class="voice-search-btn">
                 <img class="voice-search-icon" src="icons/microphone.svg">
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
@@ -43,154 +46,178 @@
         </div>
     </div>
 
-    <div class="sidebar">
-        sidebar
-    </div>
-
-    <div class="video-grid">
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://img.youtube.com/vi/n2RNcPRtAiY/maxresdefault.jpg">
-                <div class="video-time">14:20</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="https://yt3.ggpht.com/qu4TmIaYUlS41-dJ9gZ7DUR3nilvmB5_11i6OKSdvNnBNiyOusZP1bMN6ICnuxtjFBb6ioKgRQ=s88-c-k-c0x00ffffff-no-rj">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Talking Tech and AI with Google CEO 
-                        Sundar Pichai!
-                    </p>
-                    <p class="video-author">
-                        Marques Brownlee
-                    </p>
-                    <p class="video-stats">
-                        3.4m views &middot; 6 months ago
-                    </p>
-                </div>
-            </div>
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="https://supersimple.dev/exercises/youtube/icons/home.svg" alt="">
+            <div>Home</div>
         </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://img.youtube.com/vi/wtDDjBOfTZo/maxresdefault.jpg">
-                <div class="video-time">26:27</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="https://yt3.googleusercontent.com/FrBCHiFRihYVpyIETRD73uxdZn4hFJjSpogTuNBeApS1tFkHpHy3LLQzE0D3kTBUfXN6hODXVw=s160-c-k-c0x00ffffff-no-rj">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Give Me 26 minutes, I'll Give You 
-                        10,000 hours of Claude Knowledge
-                    </p>
-                    <p class="video-author">
-                        Iman Gadzhi
-                    </p>
-                    <p class="video-stats">
-                        1.1m views &middot; 1 month ago
-                    </p>
-                </div>
-            </div>
+        <div class="sidebar-link">
+            <img src="https://supersimple.dev/exercises/youtube/icons/explore.svg" alt="">
+            <div>Explore</div>
         </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://img.youtube.com/vi/uuNCPmd6yU0/maxresdefault.jpg">
-                <div class="video-time">15:57</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="https://yt3.googleusercontent.com/bOv4o98QLG45beXCv4qpvJhj_wtezZkrHIb54yAvkM6zSK9rXCufaUmd0l8UKoGKFP7BRf2O4g=s160-c-k-c0x00ffffff-no-rj">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Something strange is happening on Google
-                    </p>
-                    <p class="video-author">
-                        Christophe
-                    </p>
-                    <p class="video-stats">
-                        390K views &middot; 1 year ago
-                    </p>
-                </div>
-            </div>
+        <div class="sidebar-link">
+            <img src="https://supersimple.dev/exercises/youtube/icons/subscriptions.svg" alt="">
+            <div>Subscriptions</div>
         </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://img.youtube.com/vi/tjW_5ZAttGo/maxresdefault.jpg">
-                <div class="video-time">15:02</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="https://yt3.googleusercontent.com/vyiVx6-37LFcgsj8vB9ml-LK3PoiedhdVnkSFhPmp9V6EZqLketITjJ8mm2-0WCzjoQc0TOgLw=s160-c-k-c0x00ffffff-no-rj">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        5 Ways to Get Disgustingly 
-                        Rich As A Programmer                
-                    </p>
-                    <p class="video-author">
-                        The Coding Sloth
-                    </p>
-                    <p class="video-stats">
-                        453K views &middot; 4 months ago
-                    </p>
-                </div>
-            </div>
+        <div class="sidebar-link">
+            <img src="https://supersimple.dev/exercises/youtube/icons/originals.svg" alt="">
+            <div>Originals</div>
         </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://img.youtube.com/vi/HkCdp18WwuY/maxresdefault.jpg">
-                <div class="video-time">8:55</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="https://yt3.googleusercontent.com/_kvcpSZVgQiE31mQLbDGlRVl_qT2a6_oCFnBqc3vMPIpqP1-9tbY8kHqFQQh-1judG6OTgs1c0w=s160-c-k-c0x00ffffff-no-rj">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Asking Stanford Students How They Got Into Stanford | 
-                        GPA, SAT/ACT, Clubs, etc.
-                    </p>
-                    <p class="video-author">
-                        Ashton Herndon
-                    </p>
-                    <p class="video-stats">
-                        407K views &middot; 2 years ago
-                    </p>
-                </div>
-            </div>
+        <div class="sidebar-link">
+            <img src="https://supersimple.dev/exercises/youtube/icons/youtube-music.svg" alt="">
+            <div>Youtube Music</div>
         </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="https://img.youtube.com/vi/RGaW82k4dK4/maxresdefault.jpg">
-                <div class="video-time">8:38</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="https://yt3.ggpht.com/DT7O_xioFBZllihmSaKnI_CSVIZlIuAURRTLwFGQNZb5910Xpx_CtsjeN6ZmemSf_VSH2camnw=s88-c-k-c0x00ffffff-no-rj">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        It took me 10+ years to realize what I'll 
-                        tell you in 8 minutes                
-                    </p>
-                    <p class="video-author">
-                        Developete
-                    </p>
-                    <p class="video-stats">
-                        4m views &middot; 1 year ago
-                    </p>
-                </div>
-            </div>
+        <div class="sidebar-link">
+            <img src="https://supersimple.dev/exercises/youtube/icons/library.svg" alt="">
+            <div>Library</div>
         </div>
-    </div>
+    </nav>
+
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://img.youtube.com/vi/n2RNcPRtAiY/maxresdefault.jpg">
+                    <div class="video-time">14:20</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="https://yt3.ggpht.com/qu4TmIaYUlS41-dJ9gZ7DUR3nilvmB5_11i6OKSdvNnBNiyOusZP1bMN6ICnuxtjFBb6ioKgRQ=s88-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Talking Tech and AI with Google CEO 
+                            Sundar Pichai!
+                        </p>
+                        <p class="video-author">
+                            Marques Brownlee
+                        </p>
+                        <p class="video-stats">
+                            3.4m views &middot; 6 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
     
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://img.youtube.com/vi/wtDDjBOfTZo/maxresdefault.jpg">
+                    <div class="video-time">26:27</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/FrBCHiFRihYVpyIETRD73uxdZn4hFJjSpogTuNBeApS1tFkHpHy3LLQzE0D3kTBUfXN6hODXVw=s160-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Give Me 26 minutes, I'll Give You 
+                            10,000 hours of Claude Knowledge
+                        </p>
+                        <p class="video-author">
+                            Iman Gadzhi
+                        </p>
+                        <p class="video-stats">
+                            1.1m views &middot; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://img.youtube.com/vi/uuNCPmd6yU0/maxresdefault.jpg">
+                    <div class="video-time">15:57</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/bOv4o98QLG45beXCv4qpvJhj_wtezZkrHIb54yAvkM6zSK9rXCufaUmd0l8UKoGKFP7BRf2O4g=s160-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Something strange is happening on Google
+                        </p>
+                        <p class="video-author">
+                            Christophe
+                        </p>
+                        <p class="video-stats">
+                            390K views &middot; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://img.youtube.com/vi/tjW_5ZAttGo/maxresdefault.jpg">
+                    <div class="video-time">15:02</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/vyiVx6-37LFcgsj8vB9ml-LK3PoiedhdVnkSFhPmp9V6EZqLketITjJ8mm2-0WCzjoQc0TOgLw=s160-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            5 Ways to Get Disgustingly 
+                            Rich As A Programmer                
+                        </p>
+                        <p class="video-author">
+                            The Coding Sloth
+                        </p>
+                        <p class="video-stats">
+                            453K views &middot; 4 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://img.youtube.com/vi/HkCdp18WwuY/maxresdefault.jpg">
+                    <div class="video-time">8:55</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="https://yt3.googleusercontent.com/_kvcpSZVgQiE31mQLbDGlRVl_qT2a6_oCFnBqc3vMPIpqP1-9tbY8kHqFQQh-1judG6OTgs1c0w=s160-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Asking Stanford Students How They Got Into Stanford | 
+                            GPA, SAT/ACT, Clubs, etc.
+                        </p>
+                        <p class="video-author">
+                            Ashton Herndon
+                        </p>
+                        <p class="video-stats">
+                            407K views &middot; 2 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="https://img.youtube.com/vi/RGaW82k4dK4/maxresdefault.jpg">
+                    <div class="video-time">8:38</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="https://yt3.ggpht.com/DT7O_xioFBZllihmSaKnI_CSVIZlIuAURRTLwFGQNZb5910Xpx_CtsjeN6ZmemSf_VSH2camnw=s88-c-k-c0x00ffffff-no-rj">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            It took me 10+ years to realize what I'll 
+                            tell you in 8 minutes                
+                        </p>
+                        <p class="video-author">
+                            Developete
+                        </p>
+                        <p class="video-stats">
+                            4m views &middot; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
 </body>
 </html>
